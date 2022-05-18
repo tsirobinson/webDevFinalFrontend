@@ -33,6 +33,16 @@ export const fetchInstructorThunk = (id) => async (dispatch) => {
   }
 };
 
+export const addInstructorThunk = (instructor) => async (dispatch) => {
+  try {
+    let res = await axios.post(`${path}/instructors`, instructor);
+    dispatch(ac.addInstructor(res.data));
+    return res.data;
+  } catch(err) {
+    console.error(err);
+  }
+};
+
 //All courses
 export const fetchAllCoursesThunk = () => async (dispatch) => {
   try {
