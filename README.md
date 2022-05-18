@@ -88,7 +88,7 @@
 - [X] Write a route to add a new instructor
 - [X] Write a route to add a new course
 ### UI (React)
-- [ ] Write a component to display a form for adding a new instructor that contains inputs for at least the name and address
+- [X] Write a component to display a form for adding a new instructor that contains inputs for the firstname, lastname, department, and imageUrl
 - [ ] Display this component EITHER as part of the all-instructors view, or as its own view
 - [ ] Submitting the form with a valid name/department should
     - [ ] Make a request that causes the new instructor to be persisted in the database
