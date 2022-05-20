@@ -3,7 +3,7 @@
 
 const NewInstructorView = (props) => {
     const {handleChange, handleSubmit } = props;
-  
+    let {instructor, addInstructor} = props;
     return (
       <div className="root">
         <div className="formContainer">
@@ -33,7 +33,7 @@ const NewInstructorView = (props) => {
             <br/>
             <br/>
   
-            <button type="submit">
+            <button type="submit" onClick={() => addInstructor(instructor)}>
               Submit
             </button>
             <br/>
