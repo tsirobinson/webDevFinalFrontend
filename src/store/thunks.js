@@ -2,7 +2,7 @@ import * as ac from './actions/actionCreators';
 const axios = require('axios');
 
 //PATH (should be where your server is running)
-let path = "http://localhost:5000/api";
+let path = "http://localhost:5010/api";
 
 // THUNKS
 
@@ -76,8 +76,9 @@ export const deleteCourseThunk = courseId => async dispatch => {
 
 export const editCourseThunk = course => async dispatch => {
   try {
-    let updatedCourse = await axios.put(`${path}/courses/${course.id}`, course);
-    dispatch(ac.editCourse(updatedCourse));
+    let res = await axios.put(`${path}/courses/${course.id}`, course);
+    //res.data is the updated course object
+    dispatch(ac.editCourse(res.data));
   } catch(err) {
     console.error(err);
   }
