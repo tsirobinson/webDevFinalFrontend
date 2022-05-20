@@ -3,6 +3,7 @@
 
 const NewCourseView = (props) => {
   const {handleChange, handleSubmit } = props;
+  let {course, addCourse} = props;
 
   return (
     <div className="root">
@@ -23,14 +24,17 @@ const NewCourseView = (props) => {
           <br/>
           <br/>
 
+          <label style={{color:'#11153e', fontWeight: 'bold'}}>Location: </label>
+          <input type="text" name="location" onChange={(e) => handleChange(e)} />
+          <br/>
+          <br/>
+
           <label style={{color:'#11153e', fontWeight: 'bold'}}>instructorId: </label>
           <input type="text" name="instructorId" onChange={(e) => handleChange(e)} />
           <br/>
           <br/>
-
-          <button type="submit">
-            Submit
-          </button>
+          
+          <button type="submit" onClick={() => addCourse(course)}>Submit</button>
           <br/>
           <br/>
         </form>
