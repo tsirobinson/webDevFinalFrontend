@@ -94,10 +94,10 @@
     - [ ] Make a request that causes the new instructor to be persisted in the database
     - [ ] Add the new instructor to the list of instructors without needing to refresh the page
 - [X] Write a component to display a form for adding a new course that contains inputs for at least first name, last name and email
-    - [ ] Display this component EITHER as part of the all-courses view, or as its own view
-    - [ ] Submitting the form with a valid title, timeslot should
-        - [ ] Make a request that causes the new course to be persisted in the database
-        - [ ] Add the new course to the list of courses without needing to refresh the page
+    - [X] Display this component EITHER as part of the all-courses view, or as its own view
+    - [X] Submitting the form with a valid title, timeslot should
+        - [X] Make a request that causes the new course to be persisted in the database
+        - [X] Add the new course to the list of courses without needing to refresh the page
 
 ## Removing an Instructor and Removing a Course
 ### API (Express, Sequelize)
