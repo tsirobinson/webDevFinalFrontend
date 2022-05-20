@@ -1,7 +1,7 @@
 # Tyler Robinson (tsirobinson) & Diana Luna (dianaluna01)
 ## Users can
-- [ ] Land on a visually pleasing homepage by default, which allows navigation to view all courses and all instructors
-- [ ] Can navigate to all instructors view, and
+- [X] Land on a visually pleasing homepage by default, which allows navigation to view all courses and all instructors
+- [X] Can navigate to all instructors view, and
     - [ ] See a list of all instructors in the database
     - [ ] See an informative message if no instructors exist
     - [ ] Add a new instructor
@@ -13,7 +13,7 @@
     - [ ] Delete the instructor 
     - [ ] Edit instructor information (including adding/removing courses)
         - [ ] With a validated form displaying real-time error messages
-- [ ] Can navigate to all courses view, and
+- [X] Can navigate to all courses view, and
     - [ ] See a list of all courses in the database
     - [ ] See an informative message if no courses exist
     - [ ] Add a new course
@@ -93,7 +93,7 @@
 - [ ] Submitting the form with a valid name/department should
     - [ ] Make a request that causes the new instructor to be persisted in the database
     - [ ] Add the new instructor to the list of instructors without needing to refresh the page
-- [ ] Write a component to display a form for adding a new course that contains inputs for at least first name, last name and email
+- [X] Write a component to display a form for adding a new course that contains inputs for at least first name, last name and email
     - [ ] Display this component EITHER as part of the all-courses view, or as its own view
     - [ ] Submitting the form with a valid title, timeslot should
         - [ ] Make a request that causes the new course to be persisted in the database
