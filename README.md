@@ -14,9 +14,9 @@
     - [ ] Edit instructor information (including adding/removing courses)
         - [ ] With a validated form displaying real-time error messages
 - [X] Can navigate to all courses view, and
-    - [ ] See a list of all courses in the database
-    - [ ] See an informative message if no courses exist
-    - [ ] Add a new course
+    - [X] See a list of all courses in the database
+    - [X] See an informative message if no courses exist
+    - [X] Add a new course
         - [ ] With a validated form displaying real-time error messages
 - [ ] Can navigate to a single course view, and
     - [X] See details about a single course, including the instructor
