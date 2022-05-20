@@ -19,10 +19,10 @@
     - [ ] Add a new course
         - [ ] With a validated form displaying real-time error messages
 - [ ] Can navigate to a single course view, and
-    - [ ] See details about a single course, including the instructor
-    - [ ] Should display “Staff” if the course is not assigned an instructor
+    - [X] See details about a single course, including the instructor
+    - [X] Should display “Staff” if the course is not assigned an instructor
     - [ ] Navigate to single instructor view of the course’s instructor
-    - [ ] Delete the course
+    - [X] Delete the course
     - [ ] Edit the course’s information (including instructor)
         - [ ] With a validated form displaying real-time error messages
 
