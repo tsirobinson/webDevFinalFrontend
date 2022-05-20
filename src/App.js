@@ -11,7 +11,7 @@ import {
   AllCoursesContainer,
   NewCourseContainer,
   NewInstructorContainer
-} from './components/containers'
+} from './components/containers';
 
 // if you create separate components for adding/editing 
 // a student or instructor, make sure you add routes to those
