@@ -8,8 +8,8 @@
         - [ ] With a validated form displaying real-time error messages
 - [X] Can navigate to a single instructor view, and
     - [X] See details about a single instructor, including courses they teach (if any) 
-    - [ ] See an informative message if no courses belong to that instructor
-    - [ ] Can navigate to single course view (see below)
+    - [X] See an informative message if no courses belong to that instructor
+    - [X] Can navigate to single course view (see below)
     - [ ] Delete the instructor 
     - [ ] Edit instructor information (including adding/removing courses)
         - [ ] With a validated form displaying real-time error messages
@@ -18,7 +18,7 @@
     - [X] See an informative message if no courses exist
     - [X] Add a new course
         - [ ] With a validated form displaying real-time error messages
-- [ ] Can navigate to a single course view, and
+- [X] Can navigate to a single course view, and
     - [X] See details about a single course, including the instructor
     - [X] Should display “Staff” if the course is not assigned an instructor
     - [ ] Navigate to single instructor view of the course’s instructor
@@ -61,16 +61,16 @@
 - [X] Write a component to display a single instructor with the following information
     - [X] The instructor's name, image, and department
     - [X] A list of all courses that instructor is assigned
-- [ ] Write a component to display a single course with the following information
-    - [ ] The course title, timeslot, and location
-    - [ ] The name of the instructor 
+- [X] Write a component to display a single course with the following information
+    - [X] The course title, timeslot, and location
+    - [X] The name of the instructor 
 ### Client-Side Routing (React-Router)
 - [X] Display the appropriate instructor's info when the url matches '/instructors/:instructorId'
 - [X] Clicking on a instructor from the all-instructors view should navigate to show that instructor in the single-instructor view
 - [X] Display the appropriate course when the url matches '/courses/:courseId'
 - [X] Clicking on a course from the all-courses view should navigate to show that course in the single-course view
-- [ ] Clicking on the name of a course in the single-instructor view should navigate to show that course in the single-course view
-- [ ] Clicking on the name of a instructor in the single-course view should navigate to show that instructor in the single-instructor view
+- [X] Clicking on the name of a course in the single-instructor view should navigate to show that course in the single-course view
+- [X] Clicking on the name of a instructor in the single-course view should navigate to show that instructor in the single-instructor view
 
 ## Editing an Instuctor and Editing a Course
 ### API (Express, Sequelize)
@@ -89,7 +89,7 @@
 - [X] Write a route to add a new course
 ### UI (React)
 - [X] Write a component to display a form for adding a new instructor that contains inputs for the firstname, lastname, department, and imageUrl
-- [ ] Display this component EITHER as part of the all-instructors view, or as its own view
+- [X] Display this component EITHER as part of the all-instructors view, or as its own view
 - [ ] Submitting the form with a valid name/department should
     - [ ] Make a request that causes the new instructor to be persisted in the database
     - [ ] Add the new instructor to the list of instructors without needing to refresh the page

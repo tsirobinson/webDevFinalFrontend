@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const CourseView = (props) => {
   const { course } = props;
 
@@ -6,6 +8,8 @@ const CourseView = (props) => {
       <div>
         <h1>{course.title}</h1>
         <h3>Staff</h3>
+        <h3>{course.timeslot}</h3>
+        <h3>{course.location}</h3>
       </div>
     );
   }
@@ -13,7 +17,11 @@ const CourseView = (props) => {
   return (
     <div>
       <h1>{course.title}</h1>
-      <h3>{course.instructor.firstname + " " + course.instructor.lastname}</h3>
+      <Link to={`/instructor/${course.instructor.id}`}>
+        <h3>{course.instructor.firstname + " " + course.instructor.lastname}</h3>
+      </Link>
+      <h3>Timeslot: {course.timeslot}</h3>
+      <h3>Location: {course.location}</h3>
     </div>
   );
 
