@@ -33,9 +33,7 @@ const NewInstructorView = (props) => {
             <br/>
             <br/>
   
-            <button type="submit" onClick={() => addInstructor(instructor)}>
-              Submit
-            </button>
+            <button type="submit" onClick={() => addInstructor(instructor)}>Submit</button>
             <br/>
             <br/>
           </form>
