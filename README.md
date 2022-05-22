@@ -10,7 +10,7 @@
     - [X] See details about a single instructor, including courses they teach (if any) 
     - [X] See an informative message if no courses belong to that instructor
     - [X] Can navigate to single course view (see below)
-    - [ ] Delete the instructor 
+    - [X] Delete the instructor 
     - [ ] Edit instructor information (including adding/removing courses)
         - [ ] With a validated form displaying real-time error messages
 - [X] Can navigate to all courses view, and
