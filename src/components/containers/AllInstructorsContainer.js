@@ -1,7 +1,12 @@
 import { Component } from "react";
-import PropTypes from "prop-types";
+//import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { fetchAllInstructorsThunk } from "../../store/thunks";
+
+import { 
+  fetchAllInstructorsThunk,
+  deleteInstructorThunk 
+} from "../../store/thunks";
+
 import { AllInstructorsView } from "../views";
 
 class AllInstructorsContainer extends Component {
@@ -12,9 +17,12 @@ class AllInstructorsContainer extends Component {
 
   render() {
     return (
+      <div>
       <AllInstructorsView
-        allInstructors={this.props.allInstructors}
+        instructors={this.props.allInstructors}
+        deleteInstructor={this.props.deleteInstructor}
       />
+      </div>
     );
   }
 }
@@ -30,14 +38,16 @@ const mapState = (state) => {
 const mapDispatch = (dispatch) => {
   return {
     fetchAllInstructors: () => dispatch(fetchAllInstructorsThunk()),
+    deleteInstructor: (instructorId) => dispatch(deleteInstructorThunk(instructorId)),
   };
 };
 
+/*
 // Type check props;
 AllInstructorsContainer.propTypes = {
   allInstructors: PropTypes.array.isRequired,
   fetchAllInstructors: PropTypes.func.isRequired,
-};
+};*/
 
 // Export our store-connected container by default;
 export default connect(mapState, mapDispatch)(AllInstructorsContainer);

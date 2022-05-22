@@ -1,8 +1,10 @@
-import PropTypes from "prop-types";
+//import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+//import { deleteInstructor } from "../../store/actions/actionCreators";
 
 const AllInstructorsView = (props) => {
-  if (!props.allInstructors.length) {
+  let {instructors, deleteInstructor} = props;
+  if (!instructors.length) {
     return (
     <div>
       <p>There are no instructors.</p>
@@ -17,7 +19,7 @@ const AllInstructorsView = (props) => {
 
   return (
     <div>
-      {props.allInstructors.map((instructor) => {
+      {instructors.map((instructor) => {
         let name = instructor.firstname + " " + instructor.lastname;
         return (
           <div key={instructor.id}>
@@ -25,6 +27,7 @@ const AllInstructorsView = (props) => {
             <h1>{name}</h1>
           </Link>
           <p>{instructor.department}</p>
+          <button onClick={() => deleteInstructor(instructor.id)}>X</button>
         </div>
         );
 
@@ -37,8 +40,9 @@ const AllInstructorsView = (props) => {
   );
 };
 
+/*
 AllInstructorsView.propTypes = {
   allInstructors: PropTypes.array.isRequired,
-};
+};*/
 
 export default AllInstructorsView;

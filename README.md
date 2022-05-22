@@ -104,11 +104,11 @@
 - [X] Write a route to remove an instructor (based on its id)
 - [X] Write a route to remove a course (based on its id)
 ### UI (React)
-- [ ] In the all-instructors view, include an 'X' button next to each instructor
-- [ ] Clicking the 'X' button should
-    - [ ] Make a request that causes that instructor to be removed from database
+- [X] In the all-instructors view, include an 'X' button next to each instructor
+- [X] Clicking the 'X' button should
+    - [X] Make a request that causes that instructor to be removed from database
     - [ ] Remove the instructor from the list of instructors without needing to refresh the page
-- [ ] In the all-courses view, include an 'X' button next to each instructor
-- [ ] Clicking the 'X' button should
-    - [ ] Make a request that causes that course to be removed from database
-    - [ ] Remove the course from the list of courses without needing to refresh the page
+- [X] In the all-courses view, include an 'X' button next to each instructor
+- [X] Clicking the 'X' button should
+    - [X] Make a request that causes that course to be removed from database
+    - [X] Remove the course from the list of courses without needing to refresh the page
