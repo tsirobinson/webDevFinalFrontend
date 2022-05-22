@@ -7,6 +7,12 @@ const allInstructors = (state = [], action) => {
       return action.payload;
     case at.ADD_INSTRUCTOR:
       return [...state, action.payload]
+    case at.DELETE_COURSE:
+      return state.filter(instructor => instructor.id!==action.payload)
+    case at.EDIT_INSTRUCTOR:
+        return state.map(instructor => {
+          instructor.id===action.payload.id ? action.payload : instructor
+        });
     default:
       return state;
   }

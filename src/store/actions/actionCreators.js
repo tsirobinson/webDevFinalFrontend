@@ -28,6 +28,20 @@ export const addInstructor = (instructor) => {
   };
 };
 
+export const deleteInstructor = (instructorId) => {
+  return {
+    type: at.DELETE_INSTRUCTOR,
+    payload: instructorId,
+  };
+};
+
+export const editInstructor = (instructor) => {
+  return {
+    type: at.EDIT_INSTRUCTOR,
+    payload: instructor,
+  };
+};
+
 //All courses
 export const fetchAllCourses = (courses) => {
   return {
