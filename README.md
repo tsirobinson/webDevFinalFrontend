@@ -6,8 +6,8 @@
     - [X] See an informative message if no instructors exist
     - [ ] Add a new instructor
         - [ ] With a validated form displaying real-time error messages
-- [ ] Can navigate to a single instructor view, and
-    - [ ] See details about a single instructor, including courses they teach (if any) 
+- [X] Can navigate to a single instructor view, and
+    - [X] See details about a single instructor, including courses they teach (if any) 
     - [ ] See an informative message if no courses belong to that instructor
     - [ ] Can navigate to single course view (see below)
     - [ ] Delete the instructor 
@@ -46,7 +46,7 @@
 - [ ] Write a instructors sub-reducer to manage instructors in your Redux store
 - [X] Write a courses sub-reducer to manage courses in your Redux store
 ### UI (React)
-- [ ] Write a component to display a list of all instructors (just their names and images)
+- [X] Write a component to display a list of all instructors (just their names and images)
 - [X] Write a component to display a list of all courses (just their names)
 ### Client-Side Routing (React-Router)
 - [X] Display the all-instructors component when the url matches '/instructors'
@@ -58,17 +58,17 @@
 - [X] Write a route to serve up a single instructor (based on their id), including that instructor’s courses
 - [X] Write a route to serve up a single course (based on its id), including that course's instructor
 ### UI (React)
-- [ ] Write a component to display a single instructor with the following information
-    - [ ] The instructor's name, image, and department
-    - [ ] A list of all courses that instructor is assigned
+- [X] Write a component to display a single instructor with the following information
+    - [X] The instructor's name, image, and department
+    - [X] A list of all courses that instructor is assigned
 - [ ] Write a component to display a single course with the following information
     - [ ] The course title, timeslot, and location
     - [ ] The name of the instructor 
 ### Client-Side Routing (React-Router)
-- [ ] Display the appropriate instructor's info when the url matches '/instructors/:instructorId'
-- [ ] Clicking on a instructor from the all-instructors view should navigate to show that instructor in the single-instructor view
-- [ ] Display the appropriate course when the url matches '/courses/:courseId'
-- [ ] Clicking on a course from the all-courses view should navigate to show that course in the single-course view
+- [X] Display the appropriate instructor's info when the url matches '/instructors/:instructorId'
+- [X] Clicking on a instructor from the all-instructors view should navigate to show that instructor in the single-instructor view
+- [X] Display the appropriate course when the url matches '/courses/:courseId'
+- [X] Clicking on a course from the all-courses view should navigate to show that course in the single-course view
 - [ ] Clicking on the name of a course in the single-instructor view should navigate to show that course in the single-course view
 - [ ] Clicking on the name of a instructor in the single-course view should navigate to show that instructor in the single-instructor view
 
