@@ -2,8 +2,8 @@
 ## Users can
 - [X] Land on a visually pleasing homepage by default, which allows navigation to view all courses and all instructors
 - [X] Can navigate to all instructors view, and
-    - [ ] See a list of all instructors in the database
-    - [ ] See an informative message if no instructors exist
+    - [X] See a list of all instructors in the database
+    - [X] See an informative message if no instructors exist
     - [ ] Add a new instructor
         - [ ] With a validated form displaying real-time error messages
 - [ ] Can navigate to a single instructor view, and
@@ -49,9 +49,9 @@
 - [ ] Write a component to display a list of all instructors (just their names and images)
 - [X] Write a component to display a list of all courses (just their names)
 ### Client-Side Routing (React-Router)
-- [ ] Display the all-instructors component when the url matches '/instructors'
-- [ ] Display the all-courses component when the url matches '/courses'
-- [ ] Add links to the navbar that can be used to navigate to the all-instructors view and the all-courses view
+- [X] Display the all-instructors component when the url matches '/instructors'
+- [X] Display the all-courses component when the url matches '/courses'
+- [X] Add links to the navbar that can be used to navigate to the all-instructors view and the all-courses view
 
 ## Single Course and Single Instructor
 ### API (Express, Sequelize)
