@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
 const CourseView = (props) => {
-  const { course } = props;
-
+  let { course, deleteCourse } = props;
+  
   if(!course.instructor){
     return (
       <div>
@@ -22,6 +22,7 @@ const CourseView = (props) => {
       </Link>
       <h3>Timeslot: {course.timeslot}</h3>
       <h3>Location: {course.location}</h3>
+      <button onClick={() => deleteCourse(course.id)}>X</button>
     </div>
   );
 

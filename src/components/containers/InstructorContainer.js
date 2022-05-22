@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchInstructorThunk } from "../../store/thunks";
+import { fetchInstructorThunk, deleteInstructorThunk } from "../../store/thunks";
 
 import { InstructorView } from "../views";
 
@@ -14,6 +14,7 @@ class InstructorContainer extends Component {
     return (
       <InstructorView 
         instructor={this.props.instructor}
+        deleteInstructor={this.props.deleteInstructor}
       />
     );
   }
@@ -30,6 +31,7 @@ const mapState = (state) => {
 const mapDispatch = (dispatch) => {
   return {
     fetchInstructor: (id) => dispatch(fetchInstructorThunk(id)),
+    deleteInstructor: (instructorId) => dispatch(deleteInstructorThunk(instructorId)),
   };
 };
 

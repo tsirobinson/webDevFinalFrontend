@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const InstructorView = (props) => {
-  const {instructor} = props;
+  const {instructor, deleteInstructor} = props;
   let name = instructor.firstname + " " + instructor.lastname;
   if(instructor.courses.length) {
     return (
@@ -30,6 +30,7 @@ const InstructorView = (props) => {
           )
         })}
       </div>
+      <button onClick={() => deleteInstructor(instructor.id)}>X</button>
       </div>
     );
   } else {
@@ -38,6 +39,7 @@ const InstructorView = (props) => {
         <h1>{name}</h1>
         <p>{instructor.department}</p>
         <p>This instructor has no courses</p>
+        <button onClick={() => deleteInstructor(instructor.id)}>X</button>
       </div>
     );
   }
