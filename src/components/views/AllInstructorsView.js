@@ -36,6 +36,9 @@ const AllInstructorsView = (props) => {
       <Link to={`/newinstructor`}>
         <button>Add New Instructor</button>
       </Link>
+      <Link to={`/`}>
+        <p>Home</p>
+      </Link>
     </div>
   );
 };

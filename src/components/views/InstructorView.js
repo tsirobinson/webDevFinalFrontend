@@ -29,8 +29,14 @@ const InstructorView = (props) => {
               </div>
           )
         })}
+        
       </div>
-      <button onClick={() => deleteInstructor(instructor.id)}>X</button>
+      <Link to={`/editinstructor/${instructor.id}`}>
+        <button>Edit Instructor</button>
+      </Link>
+      <Link to={`/instructors`}>
+          <button onClick={() => deleteInstructor(instructor.id)}>X</button>
+        </Link>
       </div>
     );
   } else {
@@ -39,6 +45,9 @@ const InstructorView = (props) => {
         <h1>{name}</h1>
         <p>{instructor.department}</p>
         <p>This instructor has no courses</p>
+        <Link to={`/editinstructor/${instructor.id}`}>
+          <button>Edit Instructor</button>
+        </Link>
         <Link to={`/instructors`}>
           <button onClick={() => deleteInstructor(instructor.id)}>X</button>
         </Link>

@@ -30,7 +30,7 @@ const mapState = (state) => {
 const mapDispatch = (dispatch) => {
     return {
       fetchCourse: (id) => dispatch(fetchCourseThunk(id)),
-      editCourse: (courseId) => dispatch(editCourseThunk(courseId)),
+      editCourse: (course) => dispatch(editCourseThunk(course)),
     };
   };
 
