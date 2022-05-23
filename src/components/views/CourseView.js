@@ -22,7 +22,9 @@ const CourseView = (props) => {
       </Link>
       <h3>Timeslot: {course.timeslot}</h3>
       <h3>Location: {course.location}</h3>
-      <button onClick={() => deleteCourse(course.id)}>X</button>
+      <Link to={'/courses'} >
+        <button onClick={() => deleteCourse(course.id)}>X</button>
+      </Link>
     </div>
   );
 
