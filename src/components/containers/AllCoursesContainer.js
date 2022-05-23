@@ -10,6 +10,7 @@ import AllCoursesView from '../views/AllCoursesView';
 
 class AllCoursesContainer extends Component {
     componentDidMount() {
+      console.log(this.props);
       this.props.fetchAllCourses();
     }
     render(){

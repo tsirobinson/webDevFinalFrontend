@@ -19,6 +19,10 @@ class NewInstructorContainer extends Component {
         };
     }
 
+    componentDidMount() {
+      console.log(this.props);
+    }
+
     handleChange = event => {
       this.setState({
         [event.target.name]: event.target.value

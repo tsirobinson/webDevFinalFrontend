@@ -6,6 +6,7 @@ import { InstructorView } from "../views";
 
 class InstructorContainer extends Component {
   componentDidMount() {
+    console.log(this.props);
     //getting instructor ID from url
     this.props.fetchInstructor(this.props.match.params.id);
   }

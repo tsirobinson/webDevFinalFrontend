@@ -5,6 +5,7 @@ import { CourseView } from "../views";
 
 class CourseContainer extends Component {
   componentDidMount() {
+    console.log(this.props);
     //getting course ID from url
     this.props.fetchCourse(this.props.match.params.id);
   }
