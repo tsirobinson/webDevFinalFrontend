@@ -39,7 +39,9 @@ const InstructorView = (props) => {
         <h1>{name}</h1>
         <p>{instructor.department}</p>
         <p>This instructor has no courses</p>
-        <button onClick={() => deleteInstructor(instructor.id)}>X</button>
+        <Link to={`/instructors`}>
+          <button onClick={() => deleteInstructor(instructor.id)}>X</button>
+        </Link>
       </div>
     );
   }
