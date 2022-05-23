@@ -77,8 +77,8 @@
 - [X] Write a route to edit a new instructor
 - [X] Write a route to edit a new course
 ### UI (React)
-- [ ] Write a component to display a form for editing an instructor’s information
-- [ ] Display this component EITHER as part of the single-instructor view, or as its own view
+- [X] Write a component to display a form for editing an instructor’s information
+- [X] Display this component EITHER as part of the single-instructor view, or as its own view
 - [ ] Submitting the form should
     - [ ] Make a request that causes the instructor to be updated in the database
     - [ ] Display the updates without needing to refresh the page
