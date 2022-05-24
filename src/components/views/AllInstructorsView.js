@@ -26,6 +26,7 @@ const AllInstructorsView = (props) => {
           <Link to={`/instructor/${instructor.id}`}>
             <h1>{name}</h1>
           </Link>
+          <img src={instructor.imageUrl} alt="new"/>
           <p>{instructor.department}</p>
           <button onClick={() => deleteInstructor(instructor.id)}>X</button>
         </div>
