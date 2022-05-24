@@ -11,13 +11,13 @@
     - [X] See an informative message if no courses belong to that instructor
     - [X] Can navigate to single course view (see below)
     - [X] Delete the instructor 
-    - [ ] Edit instructor information (including adding/removing courses)
-        - [ ] With a validated form displaying real-time error messages
+    - [X] Edit instructor information (including adding/removing courses)
+        - [X] With a validated form displaying real-time error messages
 - [X] Can navigate to all courses view, and
     - [X] See a list of all courses in the database
     - [X] See an informative message if no courses exist
     - [X] Add a new course
-        - [ ] With a validated form displaying real-time error messages
+        - [X] With a validated form displaying real-time error messages
 - [X] Can navigate to a single course view, and
     - [X] See details about a single course, including the instructor
     - [X] Should display “Staff” if the course is not assigned an instructor
@@ -79,8 +79,8 @@
 ### UI (React)
 - [X] Write a component to display a form for editing an instructor’s information
 - [X] Display this component EITHER as part of the single-instructor view, or as its own view
-- [ ] Submitting the form should
-    - [ ] Make a request that causes the instructor to be updated in the database
+- [X] Submitting the form should
+    - [X] Make a request that causes the instructor to be updated in the database
     - [ ] Display the updates without needing to refresh the page
 - [X] Write a component to display a form for editing a course
 - [X] Display this component EITHER as part of the single-course view, or as its own view
