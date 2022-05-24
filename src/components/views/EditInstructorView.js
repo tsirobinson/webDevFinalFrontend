@@ -1,27 +1,43 @@
-import { Link } from "react-router-dom";
-
 const EditInstructorView = (props) => {
-    let { instructor, editInstructor } =  props;
-    let name = instructor.firstname + " " + instructor.lastname;
+    const {handleChange, handleSubmit } = props;
+    let {instructor, editInstructor} = props;
     return (
-        <div>
-            <p>Update Information for {name}:</p>
-            <form onSubmit={editInstructor(instructor)}>
-                <p>First Name</p> 
-                <input type="text" name="firstname"/>
-                <p>Last Name</p>
-                <input type="text" name="lastname"/>
-                <p>Department</p>
-                <input type="text" name="department"/>
-                <p>Image URL</p>
-                <input type="text" name="imageUrl"/>
-                <button type="submit">Save</button>
-            </form>
-            <Link to={`/instructor/${instructor.id}`}>
-                <p>Back</p>
-            </Link>
-        </div>
-    );
-}
+      <div className="root">
+        <div className="formContainer">
+          <div className="formTitle">
+            <h2 style={{fontWeight: 'bold', fontFamily: 'Courier, sans-serif', fontSize: '20px', color: '#11153e'}}>
+              Edit Instructor
+            </h2>
+          </div>
+          <form style={{textAlign: 'center'}} onSubmit={(e) => handleSubmit(e)}>
+            <label style= {{color:'#11153e', fontWeight: 'bold'}}>First Name: </label>
+            <input type="text" name="firstname" onChange ={(e) => handleChange(e)} />
+            <br/>
+            <br/>
 
-export default EditInstructorView;
+            <label style= {{color:'#11153e', fontWeight: 'bold'}}>Last Name: </label>
+            <input type="text" name="lastname" onChange ={(e) => handleChange(e)} />
+            <br/>
+            <br/>
+  
+            <label style={{color:'#11153e', fontWeight: 'bold'}}>Department: </label>
+            <input type="text" name="department" onChange={(e) => handleChange(e)} />
+            <br/>
+            <br/>
+  
+            <label style={{color:'#11153e', fontWeight: 'bold'}}>Image URL: </label>
+            <input type="text" name="imageUrl" onChange={(e) => handleChange(e)} />
+            <br/>
+            <br/>
+  
+            <button type="submit" onClick={() => editInstructor(instructor)}>Edit</button>
+            <br/>
+            <br/>
+          </form>
+          </div>
+        </div>
+      
+    )
+  }
+  
+  export default EditInstructorView;

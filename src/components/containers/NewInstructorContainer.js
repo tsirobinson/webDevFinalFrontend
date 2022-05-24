@@ -34,7 +34,7 @@ class NewInstructorContainer extends Component {
 
         let instructor = {
             firstname: this.state.firstname,
-            timeslot: this.state.lastname,
+            lastname: this.state.lastname,
             department: this.state.department,
             imageUrl: this.state.imageUrl
         };
