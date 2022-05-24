@@ -5,7 +5,7 @@
     - [X] See a list of all instructors in the database
     - [X] See an informative message if no instructors exist
     - [X] Add a new instructor
-        - [X] With a validated form displaying real-time error messages
+        - [ ] With a validated form displaying real-time error messages
 - [X] Can navigate to a single instructor view, and
     - [X] See details about a single instructor, including courses they teach (if any) 
     - [X] See an informative message if no courses belong to that instructor
