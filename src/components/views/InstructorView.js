@@ -7,7 +7,7 @@ const InstructorView = (props) => {
     return (
       <div>      
         <h1>{name}</h1>
-        <img src={instructor.imageUrl} alt="new"/>
+        <img src={instructor.imageUrl} alt="new" className="photo"/>
         <p>{instructor.department}</p>
       {/*
         <ul>
@@ -47,7 +47,7 @@ const InstructorView = (props) => {
     return (
       <div>      
         <h1>{name}</h1>
-        <img src={instructor.imageUrl} alt="new"/>
+        <img src={instructor.imageUrl} alt="new" className="photo"/>
         <p>{instructor.department}</p>
         <p>This instructor has no courses</p>
         <Link to={`/editinstructor/${instructor.id}`}>
