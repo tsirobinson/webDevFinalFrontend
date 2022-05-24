@@ -1,5 +1,5 @@
 const EditInstructorView = (props) => {
-    const {handleChange, handleSubmit } = props;
+    const { handleChange, handleSubmit } = props;
     let {instructor, editInstructor} = props;
     return (
       <div className="root">
@@ -35,9 +35,8 @@ const EditInstructorView = (props) => {
             <br/>
           </form>
           </div>
-        </div>
-      
-    )
-  }
+        </div>  
+    );
+}
   
   export default EditInstructorView;

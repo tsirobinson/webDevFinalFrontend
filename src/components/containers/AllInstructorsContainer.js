@@ -7,7 +7,7 @@ import {
   deleteInstructorThunk 
 } from "../../store/thunks";
 
-import { AllInstructorsView } from "../views";
+import AllInstructorsView from '../views/AllInstructorsView';
 
 class AllInstructorsContainer extends Component {
   componentDidMount() {
@@ -18,12 +18,12 @@ class AllInstructorsContainer extends Component {
   render() {
     return (
       <div>
-      <AllInstructorsView
-        instructors={this.props.allInstructors}
-        deleteInstructor={this.props.deleteInstructor}
-      />
+        <AllInstructorsView
+          instructors={this.props.allInstructors}
+          deleteInstructor={this.props.deleteInstructor}
+        />
       </div>
-    );
+    )
   }
 }
 

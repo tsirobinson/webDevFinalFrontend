@@ -32,7 +32,7 @@ class EditCourseContainer extends Component {
       event.preventDefault();
       let course = {
         title: this.state.title,
-        tiemeslot: this.state.timeslot,
+        timeslot: this.state.timeslot,
         location: this.state.location,
         instructorId: this.state.instructorId
       }

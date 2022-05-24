@@ -1,9 +1,9 @@
 //import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-//import { deleteInstructor } from "../../store/actions/actionCreators";
 
 const AllInstructorsView = (props) => {
   let {instructors, deleteInstructor} = props;
+
   if (!instructors.length) {
     return (
     <div>
@@ -44,9 +44,9 @@ const AllInstructorsView = (props) => {
   );
 };
 
-/*
-AllInstructorsView.propTypes = {
-  allInstructors: PropTypes.array.isRequired,
-};*/
+
+// AllInstructorsView.propTypes = {
+//   allInstructors: PropTypes.array.isRequired,
+// };
 
 export default AllInstructorsView;
