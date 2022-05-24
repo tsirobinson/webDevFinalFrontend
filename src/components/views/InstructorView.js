@@ -37,6 +37,9 @@ const InstructorView = (props) => {
       <Link to={`/instructors`}>
           <button onClick={() => deleteInstructor(instructor.id)}>X</button>
         </Link>
+        <Link to={'/instructors'} >
+        <p>Back</p>
+      </Link>
       </div>
     );
   } else {
@@ -51,6 +54,9 @@ const InstructorView = (props) => {
         <Link to={`/instructors`}>
           <button onClick={() => deleteInstructor(instructor.id)}>X</button>
         </Link>
+        <Link to={'/instructors'} >
+        <p>Back</p>
+      </Link>
       </div>
     );
   }

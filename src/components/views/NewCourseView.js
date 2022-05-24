@@ -1,5 +1,4 @@
-
-
+import { Link } from "react-router-dom";
 
 const NewCourseView = (props) => {
   const {handleChange, handleSubmit } = props;
@@ -39,6 +38,9 @@ const NewCourseView = (props) => {
           <br/>
         </form>
         </div>
+        <Link to={'/instructors'} >
+            <p>Back</p>
+        </Link>
       </div>
     
   )
